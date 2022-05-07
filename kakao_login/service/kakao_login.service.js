@@ -11,7 +11,7 @@ function KaKaoLoginService() {
 
         console.log('token start')
         const code = req.query.code
-        const apikey = `984e9d07d893775bfe09ed1ae9cbe0fe`
+        const apikey = ``
         const redirect_uri = `http://localhost:3000/api/kakao_login/oauth/authorize`
         var data = QueryString.stringify({
             grant_type: "authorization_code",
